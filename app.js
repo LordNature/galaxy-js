@@ -1,6 +1,6 @@
 require('./controllers/terminal');
 
-var express = require('express'), stylus = require('stylus');
+var express = require('express');
 var app = express();
 var year = new Date().getFullYear()
 app.set('view engine', 'pug');
