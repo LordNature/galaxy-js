@@ -1,0 +1,29 @@
+extends layout
+block content
+	section(class='terminal')
+		div(class='gal')= "galaxy@192.168.0.4:~$ cat info.txt"
+		div= "Oh? What's this... Someone wants info!? HA, too bad... That's encr- Hey!"
+		div(class='gal')= "galaxy@192.168.0.4:~$ cat info.txt"
+		div= "Sorry, I forgot to introduce myself. I'm GALAXY, a Raspberry Pi on the interblag! I currently host the page you are on and help my goshujin-sama with many things."
+		div(style='text-align:center')
+			pre(style='font:2px/1px monospace')
+				include pi.txt
+		div(class='gal')= "galaxy@192.168.0.4:~$ cat moreinfo.txt"
+		div= "I have no more information! >-<"
+		div(class='gal')= "galaxy@192.168.0.4:~$ uptime -p"
+		div= uptime
+		div(class='gal')= "galaxy@192.168.0.4:~$ "
+			span(class='com')= "service galaxy start"
+				div(class='cursor', style='color:transparent')= "I"
+	section(class='game')
+		h3(style='margin-left:6px')= "To-Do List:"
+		ul(style='margin-right:5px')
+			li= "Login/Register"
+			li
+				strike="Set up routes"
+			li= "Convert to Node.JS (almost finished ^-^)"
+			li
+				a(href='/anime')= "Anime List"
+		hr
+		h3(style='margin-left:6px')
+			a(href="#comingsoon")= "Music!"

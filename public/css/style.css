@@ -1,0 +1,260 @@
+/* GALAXY AUTO-GENERATED CSS
+ * DO NOT MODIFY :^)
+ * Version #$version
+ * Copyright 2016
+ */
+/* Scroll */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background: #090;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+body {
+  scrollbar-face-color: #090;
+  scrollbar-track-color: #111;
+}
+@import "//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css";
+body {
+  background-color: #111;
+  font-family: "Hack", monospace;
+  color: #090;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+.gal {
+  color: #49a355;
+}
+.copy {
+  background-color: #111;
+  border-top: 2px solid #090;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  width: 100%;
+}
+hr {
+  display: block;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: #090;
+}
+.btn {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #090;
+  background-color: transparent;
+  color: #090;
+}
+pre {
+  margin: 10px;
+}
+a {
+  color: #7c10c4;
+}
+form {
+  position: relative;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.form-input {
+  margin: 0 0 4px 0;
+  border: 2px solid #090;
+}
+.game {
+  display: table;
+  width: auto;
+  height: 25%;
+  border: 1px solid #090;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 50px auto;
+}
+.game p.text {
+  margin: 10px;
+}
+.game form {
+  margin: 10px;
+}
+.logo {
+  width: 425px;
+  margin: 10px auto;
+}
+.logo img {
+  margin: 0 20%;
+}
+.why {
+  position: absolute;
+  display: block;
+  padding-top: 600px;
+  width: 500px;
+}
+.why h4 {
+  text-decoration: underline;
+}
+.terminal {
+  width: 425px;
+  margin: 25px auto;
+}
+.terminal input[type="button"] {
+  background-color: transparent;
+  border-color: #fff;
+  color: #090;
+  font-family: "Hack", monospace;
+  margin-top: 5px;
+}
+.terminal .com {
+  color: #12c4ff;
+  display: inline-block;
+}
+@media only screen and (max-width: 992px) {
+  .galaxy {
+    display: none;
+  }
+  .why {
+    display: none;
+  }
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .logo img {
+    z-index: 5;
+    width: 200px;
+    margin: 0 0%;
+  }
+  .terminal {
+    width: 350px;
+  }
+}
+.terminal .cursor {
+  display: inline-block;
+  background: #111;
+  margin-left: 6px;
+  -webkit-animation: blink 2s linear 0s infinite;
+  -moz-animation: blink 2s linear 0s infinite;
+  -ms-animation: blink 2s linear 0s infinite;
+  -o-animation: blink 2s linear 0s infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    background: #12c4ff;
+  }
+  47% {
+    background: #12c4ff;
+  }
+  50% {
+    background: #111;
+  }
+  97% {
+    background: #111;
+  }
+  100% {
+    background: #12c4ff;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    background: #12c4ff;
+  }
+  47% {
+    background: #12c4ff;
+  }
+  50% {
+    background: #111;
+  }
+  97% {
+    background: #111;
+  }
+  100% {
+    background: #12c4ff;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+    background: #12c4ff;
+  }
+  47% {
+    background: #12c4ff;
+  }
+  50% {
+    background: #111;
+  }
+  97% {
+    background: #111;
+  }
+  100% {
+    background: #12c4ff;
+  }
+}
+@-o-keyframes blink {
+  0% {
+    background: #12c4ff;
+  }
+  47% {
+    background: #12c4ff;
+  }
+  50% {
+    background: #111;
+  }
+  97% {
+    background: #111;
+  }
+  100% {
+    background: #12c4ff;
+  }
+}
+/* Framework */
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col {
+  width: 25%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+nav {
+  position: fixed !important;
+}

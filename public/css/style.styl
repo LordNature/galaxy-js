@@ -1,0 +1,293 @@
+$version = 1
+$grey = #111
+$green = #090
+$lgreen = #49A355
+/* GALAXY AUTO-GENERATED CSS
+ * DO NOT MODIFY :^)
+ * Version #$version
+ * Copyright 2016
+ */
+
+/* Scroll */
+scrollbar($size, $primary, $secondary = lighten($primary, 25%))
+	::-webkit-scrollbar
+		width:  $size
+		height: $size
+
+	::-webkit-scrollbar-thumb
+		background: $primary
+
+	::-webkit-scrollbar-track
+		background: $secondary
+
+	body
+		scrollbar-face-color: $primary
+		scrollbar-track-color: $secondary
+
+scrollbar(.5em, $green, $grey)
+
+@import "//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css"
+body
+	background-color: $grey
+	font-family: "Hack", monospace
+	color: $green
+	font-size: 14px
+	font-weight: bold
+	line-height: 20px
+	-webkit-font-smoothing: antialiased
+
+.gal
+	color: $lgreen
+
+
+.copy
+	background-color: $grey
+	border-top: 2px solid $green
+	text-align: center
+	padding-top: 15px
+	padding-bottom: 15px
+	position: fixed
+	bottom: 0
+	left: 0
+	height: 25px
+	width: 100%
+
+
+hr
+	display: block
+	-webkit-margin-before: 0.5em
+	-webkit-margin-after: 0.5em
+	-webkit-margin-start: auto
+	-webkit-margin-end: auto
+	border-style: inset
+	border-width: 1px
+	border-color: $green
+
+
+.btn
+	display: inline-block
+	padding: 3px 6px
+	margin-bottom: 0
+	font-size: 14px
+	font-weight: 400
+	line-height: 1
+	text-align: center
+	white-space: nowrap
+	vertical-align: middle
+	-ms-touch-action: manipulation
+	touch-action: manipulation
+	cursor: pointer
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	background-image: none
+	border: 1px solid $green
+	background-color: transparent
+	color: $green
+
+
+pre
+	margin: 10px
+
+
+a
+	color: #7C10C4
+
+
+form
+	position: relative
+
+
+.show
+	display: block
+
+
+.hide
+	display: none
+
+
+.form-input
+	margin: 0 0 4px 0
+	border: 2px solid $green
+
+
+.game
+	display: table
+	width: auto
+	height: 25%
+	border: 1px solid $green
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	margin: 50px auto
+
+
+.game p.text
+	margin: 10px
+
+
+.game form
+	margin: 10px
+
+
+.logo
+	width: 425px
+	margin: 10px auto
+
+
+.logo img
+	margin: 0 20%
+
+
+.why
+	position: absolute
+	display: block
+	padding-top: 600px
+	width: 500px
+
+
+.why h4
+	text-decoration: underline
+
+
+.terminal
+	width: 425px
+	margin: 25px auto
+
+
+.terminal input[type="button"]
+	background-color: transparent
+	border-color: #fff
+	color: $green
+	font-family: "Hack", monospace
+	margin-top: 5px
+
+
+.terminal .com
+	color: #12C4FF
+	display: inline-block
+
+
+@media only screen and (max-width:992px)
+	.galaxy
+		display: none
+	
+	.why
+		display: none
+	
+	.logo
+		width: 200px
+		margin: 0 auto
+	
+	.logo img
+		z-index: 5
+		width: 200px
+		margin: 0 0%
+	
+	.terminal
+		width: 350px
+	
+
+
+.terminal .cursor
+	display: inline-block
+	background: $grey
+	margin-left: 6px
+	-webkit-animation: blink 2s linear 0s infinite
+	-moz-animation: blink 2s linear 0s infinite
+	-ms-animation: blink 2s linear 0s infinite
+	-o-animation: blink 2s linear 0s infinite
+
+
+@-webkit-keyframes blink
+	0%
+		background: #12C4FF
+	
+	47%
+		background: #12C4FF
+	
+	50%
+		background: $grey
+	
+	97%
+		background: $grey
+	
+	100%
+		background: #12C4FF
+	
+
+
+@-moz-keyframes blink
+	0%
+		background: #12C4FF
+	
+	47%
+		background: #12C4FF
+	
+	50%
+		background: $grey
+	
+	97%
+		background: $grey
+	
+	100%
+		background: #12C4FF
+	
+
+
+@-ms-keyframes blink
+	0%
+		background: #12C4FF
+	
+	47%
+		background: #12C4FF
+	
+	50%
+		background: $grey
+	
+	97%
+		background: $grey
+	
+	100%
+		background: #12C4FF
+	
+
+
+@-o-keyframes blink
+	0%
+		background: #12C4FF
+	
+	47%
+		background: #12C4FF
+	
+	50%
+		background: $grey
+	
+	97%
+		background: $grey
+	
+	100%
+		background: #12C4FF
+
+
+
+/* Framework */
+.container
+	width: 90%
+	margin-left: auto
+	margin-right: auto
+
+.row
+	margin-left: -15px
+	margin-right: -15px
+
+.col
+	width: 25%
+	float: left
+	position: relative
+	min-height: 1px
+	padding-left: 15px
+	padding-right: 15px
+
+nav
+	position: fixed !important

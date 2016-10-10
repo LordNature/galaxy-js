@@ -1,0 +1,16 @@
+doctype
+html
+	head
+		title= "> galaxy - " + title
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='/static/css/style.css')
+	body
+		div(class='logo', style='padding:10px')
+			img(src='/static/imgs/logo.png')
+		block content
+		section(class='copy')
+			a(rel='license', href='http://creativecommons.org/licenses/by-nc-sa/4.0/')= "Copyright"
+			=" © "
+			a(href='http://steamcommunity.com/id/LordNature')= "LordNature"
+			= " " + year
