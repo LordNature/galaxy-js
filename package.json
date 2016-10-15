@@ -1,17 +1,25 @@
 {
   "name": "galaxy-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "a bad website",
   "main": "app.js",
   "dependencies": {
     "express": "^4.14.0",
     "pug": "^2.0.0-beta6",
-    "request": "^2.75.0"
+    "unirest": "^0.5.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordNature/galaxy-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LordNature/galaxy-node/issues"
+  },
+  "homepage": "https://galaxy.moe",
   "author": "",
   "license": "ISC"
 }
