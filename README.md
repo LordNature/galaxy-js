@@ -8,3 +8,4 @@ If you have any suggestions or resources for me to try it, please leave an issue
 * [Express](https://github.com/expressjs/express)
 * [Pug](https://github.com/pugjs/pug)
 * [Stylus](https://github.com/stylus/stylus)
+* [Unirest](https://github.com/Mashape/unirest-nodejs)
