@@ -18,11 +18,12 @@ app.get('/', function (req, res) {
 })
 
 app.get('/anime', function (req, res) {
-	unirest.get('https://hummingbird.me/api/v1/users/LordNature')
-	.headers({'Accept': 'application/json', 'Content-Type': 'application/json'})
+	//unirest.get('https://hummingbird.me/api/v1/users/LordNature')
+	unirest.get('https://kitsu.io/api/edge/users/41416')
+	.headers({'Accept': 'application/vnd.api+json', 'Content-Type': 'application/vnd.api+json'})
 	.end(function (result) {
-		var api = result.body
-		var totalanime = api.life_spent_on_anime + 'seconds'
+		var api = result.body.data
+		var totalanime = api.attributes.lifeSpentOnAnime + 'seconds'
 		res.render('anime', { title: 'Anime List', api: api, totalanime: totalanime })
 	})
 })
