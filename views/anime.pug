@@ -1,10 +1,8 @@
 extends layout
 block content
 	section(class='hbInfo')
-		img(src=api.attributes.avatar.original)
+		img(src=api.attributes.avatar.original, style="width:200px")
 		h1= api.attributes.name
-		-function s2t(s) {date = new Date(s);return date.getUTCMonth() + ' months, ' + date.getUTCDay() + ' days, ' + date.getUTCHours() + ' hours, and  ' + date.getUTCMinutes() + ' minutes.';}
-		-var totalAnime2 = s2t(api.attributes.lifeSpentOnAnime)
 		p= 'Watched ' + totalAnime + ' of anime'
 	section(class='panelContainer')
 		//-Testing Cases with Pug
