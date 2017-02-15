@@ -1,9 +1,8 @@
 require('./controllers/terminal')
-
-
 var express = require('express'),
-	unirest = require ('unirest'),
+	unirest = require('unirest'),
 	app = express(),
+	anime = require('./controllers/anime')
 	development = true
 
 app.set('view engine', 'pug')
@@ -17,10 +16,8 @@ app.get('/anime', function (req, res) {
 	unirest.get('https://kitsu.io/api/edge/users/41416')
 	.headers({'Accept': 'application/vnd.api+json', 'Content-Type': 'application/vnd.api+json'})
 	.end(function (result) {
-		var test = require('./controllers/anime')
 		var api = result.body.data
-		var totalAnime = test.minsToString(122753)
-		console.log(test)
+		var totalAnime = anime.minsToString(api.attributes.totalAnime)
 		// Seems like it's best to keep most of js out
 		res.render('anime', { title: 'Anime List', api: api, totalAnime: totalAnime})
 	})
