@@ -1,7 +1,21 @@
 extends layout
 block content
 	section(class='hbInfo')
-		img(src=api.attributes.avatar.original)
+		//img(src=api.attributes.avatar.original)
 		h1= api.attributes.name
-		p= 'Watched ' + totalanime + ' of anime'
+		-function s2t(s) {
+			date = new Date(s)
+			return date.getUTCMonth() + ' months, ' + date.getUTCDay() + ' days, ' + date.getUTCHours() + ' hours, and  ' + date.getUTCMinutes() + ' minutes.' }
+		p= 'Watched ' + totalAnime2 + ' of anime'
 	section(class='panelContainer')
+		//-Testing Cases with Pug
+		- var friends = api.attributes.followersCount
+			case friends
+				when 0
+					p you have no friends
+				when 1: p you have a friend
+				default: p you have #{friends} friends
+			-var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
+			each item in list
+				li= item
+				//-var totalAnime2 = s2t(api.attributes.lifeSpentOnAnime)
