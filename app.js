@@ -13,15 +13,13 @@ app.get('/', function (req, res) {
 })
 
 app.get('/anime', function (req, res) {
-	unirest.get('https://kitsu.io/api/edge/users/41416')
-	.headers({'Accept': 'application/vnd.api+json', 'Content-Type': 'application/vnd.api+json'})
-	.end(function (result) {
-		var api = result.body.data
-		var totalAnime = anime.minsToString(api.attributes.totalAnime)
-		// Seems like it's best to keep most of js out
-		res.render('anime', { title: 'Anime List', api: api, totalAnime: totalAnime})
-	})
+	anime.fetchUser("LordNature", function(error, response) {
+		var api = response[0]
+		var totalAnime = anime.minsToString(api.attributes.lifeSpentOnAnime)
+		res.render('anime', { title: 'Anime List', api: api, totalAnime: totalAnime })
+	});
 })
+
 // Cool. If else statements are next gen. :^)
 if (development == true) {
 	app.listen(3000, function () {
