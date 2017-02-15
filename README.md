@@ -1,4 +1,4 @@
-[![Galaxy.moe](https://galaxy.moe/static/imgs/logo.png)](http://galaxy.moe/)
+[![Galaxy.moe](https://galaxy.moe/logo.png)](http://galaxy.moe/)
 # Galaxy-Node
 My attempt at converting my __simple__ PHP site to Node.JS.  
 My first and __hopefully__ not last Node.JS application.  
