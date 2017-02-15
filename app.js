@@ -5,11 +5,6 @@ var express = require('express'),
 	year = new Date().getFullYear(),
 	development = true
 
-function s2t(s) {
-	date = new Date(s)
-	return date.getUTCMonth() + ' months, ' + date.getUTCDay() + ' days, ' + date.getUTCHours() + ' hours, and  ' + date.getUTCMinutes() + ' minutes.'
-}
-
 app.set('view engine', 'pug')
 app.use('/static', express.static('public'))
 
@@ -22,9 +17,7 @@ app.get('/anime', function (req, res) {
 	.headers({'Accept': 'application/vnd.api+json', 'Content-Type': 'application/vnd.api+json'})
 	.end(function (result) {
 		var api = result.body.data
-		//var totalanime = api.attributes.lifeSpentOnAnime + 'seconds'
-		var totalAnime = s2t(api.attributes.lifeSpentOnAnime)
-		res.render('anime', { title: 'Anime List', api: api, totalanime: totalAnime })
+		res.render('anime', { title: 'Anime List', api: api })
 	})
 })
 // Cool. If else statements are next gen. :^)
