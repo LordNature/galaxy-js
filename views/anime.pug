@@ -3,9 +3,8 @@ block content
 	section(class='hbInfo')
 		//img(src=api.attributes.avatar.original)
 		h1= api.attributes.name
-		-function s2t(s) {
-			date = new Date(s)
-			return date.getUTCMonth() + ' months, ' + date.getUTCDay() + ' days, ' + date.getUTCHours() + ' hours, and  ' + date.getUTCMinutes() + ' minutes.' }
+		-function s2t(s) {date = new Date(s);return date.getUTCMonth() + ' months, ' + date.getUTCDay() + ' days, ' + date.getUTCHours() + ' hours, and  ' + date.getUTCMinutes() + ' minutes.';}
+		-var totalAnime2 = s2t(api.attributes.lifeSpentOnAnime)
 		p= 'Watched ' + totalAnime2 + ' of anime'
 	section(class='panelContainer')
 		//-Testing Cases with Pug
@@ -18,4 +17,3 @@ block content
 			-var list = ["Uno", "Dos", "Tres", "Cuatro", "Cinco", "Seis"]
 			each item in list
 				li= item
-				//-var totalAnime2 = s2t(api.attributes.lifeSpentOnAnime)
